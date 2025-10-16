@@ -3,7 +3,7 @@
 const redux = require('redux');
 const createStore=redux.createStore;
 const bindActionCreators=redux.bindActionCreators // working with dispatch
-const combineReducers =redux.combineReducers
+const combineReducers =redux.combineReducers  //Multipale reducer
 
 //action
 const CAKE_ORDERED= "CAKE_ORDERED"
@@ -123,3 +123,4 @@ actions.orderIcecrem()
 actions.orderIcecrem()
 actions.restockIcecrem(2)
 unsubscribe()
+
