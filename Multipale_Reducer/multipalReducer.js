@@ -62,16 +62,7 @@ const cakeReducer=(state=initialCakeState, action)=>{
                 numOfCakes: state.numOfCakes +action.payload
             };
             
-        case ICECREM_ORDERD:
-            return {
-                ...state,
-                numOfIcecrem: state.numOfIcecrem-action.payload,
-            };
-        case ICECREM_RESTOCKED:
-            return {
-                ...state,
-                numOfIcecrem: state.numOfIcecrem +action.payload
-            }
+        
             default:
                 return state
     }
@@ -123,4 +114,5 @@ actions.orderIcecrem()
 actions.orderIcecrem()
 actions.restockIcecrem(2)
 unsubscribe()
+
 
