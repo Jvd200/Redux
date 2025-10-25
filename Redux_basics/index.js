@@ -1,4 +1,6 @@
 
+
+
 const redux = require('redux');
 const createStore=redux.createStore;
 
@@ -10,7 +12,7 @@ const CAKE_RESTOCKED= 'CAKE_RESTOCKED'
 function orderCake(){
     return{
         type: CAKE_ORDERED,
-        payload:1
+        payload:2
     }
 }
 function restockCake(qty=1){
@@ -57,3 +59,4 @@ store.dispatch(orderCake())
 store.dispatch(orderCake())
 store.dispatch(restockCake(4))
 unsubscribe()
+
